@@ -1,0 +1,56 @@
+f(n) = log n :
+	For 1 second: inf 
+	For 1 minute: inf 
+	For 1 hour : inf 
+	For 1 day: inf 
+	For 1 month: inf 
+	For 1 year: inf 
+	For 1 century: inf 
+f(n) = n^0.5 :
+	For 1 second: 1000000000000.000000 
+	For 1 minute: 3600000000000000.000000 
+	For 1 hour : 12960000000000000000.000000 
+	For 1 day: 7464960000000000000000.000000 
+	For 1 month: 6718463999999999731564544.000000 
+	For 1 year: 967458815999999995705032704.000000 
+	For 1 century: 9674588159999999635992931729408.000000 
+f(n) = n: 
+	For 1 second: 1000000.000000 
+	For 1 minute: 60000000.000000 
+	For 1 hour : 3600000000.000000 
+	For 1 day: 86400000000.000000 
+	For 1 month: 2592000000000.000000 
+	For 1 year: 31104000000000.000000 
+	For 1 century: 3110400000000000.000000 
+f(n) = pow(n,2) :
+	For 1 second: 1000.000000 
+	For 1 minute: 7745.966692 
+	For 1 hour : 60000.000000 
+	For 1 day: 293938.769134 
+	For 1 month: 1609968.943800 
+	For 1 year: 5577096.018539 
+	For 1 century: 55770960.185387 
+f(n) = pow(n,3) :
+	For 1 second: 100.000000 
+	For 1 minute: 391.486764 
+	For 1 hour : 1532.618865 
+	For 1 day: 4420.837798 
+	For 1 month: 13736.570911 
+	For 1 year: 31448.896731 
+	For 1 century: 145972.847894 
+f(n) = pow(2,n) :
+	For 1 second: 19.931569 
+	For 1 minute: 25.838459 
+	For 1 hour : 31.745350 
+	For 1 day: 36.330312 
+	For 1 month: 41.237203 
+	For 1 year: 44.822165 
+	For 1 century: 51.466022 
+f(n) = n! :
+	For 1 second: 9.000000 
+	For 1 minute: 11.000000 
+	For 1 hour : 12.000000 
+	For 1 day: 13.000000 
+	For 1 month: 15.000000 
+	For 1 year: 16.000000 
+	For 1 century: 17.000000 
