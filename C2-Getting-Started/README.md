@@ -37,3 +37,36 @@
         - Intialization: Loop invariant must hold true before entering loop
         - Maintenence: Loop invariant must hold true before each subsequent iteration
         - Termination: Loop invariant must hold true even after exiting the loop.
+
+## Analyzing Algorithms
+
+- RAM Model of Computation
+    - model helps us to make assumptions about resources before analyzing algorithms
+    - properties:
+        - no concurrent operations
+        - each instruction takes same amount of time
+        - each data access takes same amount of time
+        - contains arithmetic instructions (including floor and ceiling)
+        - contains movement instructions (load, copy, store)
+        - contains control instructions (conditional & unconditional branches, subroutine call and return)
+        - contains data types: int, float, char
+        - no memory hierarchy (cache, virtual memory etc)
+
+- Input Size
+    - Number of inputs
+    - Or size of the inputs
+- Running time
+    - ~ Number of instructions and data accesses executed
+    - RT of an algorithm is the sum of RTs of statements executed in it
+    - To analyze algorithms, it is not always necessary to compute exact running time.
+- Worst and average case analysis
+    - Worst Case Analysis is used most often
+        - gives upper bound
+        - algorithms tend to have worst cases very often
+    - Average Case Analysis may get very complex
+        - What does "average" input constitute?
+- Order of growth
+    - or Rate of Growth, gives insights to how running time grows with increasing inputs
+    - in worst case analysis:
+        - ignore constants like c1, c2, ... etc
+        - ignore non-leading terms since leading term will be more significant when input is really large.
