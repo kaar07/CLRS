@@ -1,6 +1,8 @@
 # Chapter-2: Getting Started
 
 
+*Note*: This chapter isn't about sorting algorithms. ;-)
+
 ## Insertion Sort
 
 - **Sorting problem**:
@@ -70,3 +72,71 @@
     - in worst case analysis:
         - ignore constants like c1, c2, ... etc
         - ignore non-leading terms since leading term will be more significant when input is really large.
+
+
+## Designing Algorithms
+
+- **Divide and Conquer**
+    - three characteristic steps:
+        - Divide: break problem subproblems that are smaller instances of same problem
+        - Conquer: each subproblem should be sovled (also recursively, implies may divide further)
+        - Combine: to form a solution to original problem based on subproblems' results.
+    - *the base case*
+        - when subproblem is small enough, it may not need recursing
+        - base case acts as termination of recursion in a chain
+        - results of subproblems are backtracked to parent problems 
+
+```
+// The MergeSort Algorithm
+
+MergeSort(A,l,h)
+if(l>=h): // base-case
+    return
+m = (l+h)/2
+MergeSort(A,l,m)
+MergeSort(A,m+1,h)
+Merge(A,l,h,m)
+```
+
+```
+// The Merge Algorithm (used in conjunction with MergeSort)
+
+Merge(A,l,h,m)
+n1 = m - l + 1
+n2 = h - m
+T1[0:(n1-1)]
+T2[0:(n2-2)]
+for i=0 to (n1-1):
+    T1[i] = A[l+i]
+for i=0 to (n2-1):
+    T2[i] = A[m+1+j]
+i = 0
+j = 0
+k = l
+while(i<n1 and j<n2):
+    if(T1[i] <= T2[j]):
+        A[k] = T1[i]
+        i = i + 1
+    else:
+        A[k] = T2[j]
+        j = j + 1
+    k = k + 1
+while(i<n1):
+    A[k] = T1[i]
+    i = i + 1
+    k = k + 1
+while(j<n2):
+    A[k] = T2[j]
+    j = j + 1
+    k = k + 1
+```
+
+- Sorting based on Merge Sort is done through two functions
+    - MergeSort
+        - Divides
+        - Checks base cases
+        - Initiates Combination
+    - Merge
+        - Conquers
+        - Can also check base case instead of MergeSort doing it
+

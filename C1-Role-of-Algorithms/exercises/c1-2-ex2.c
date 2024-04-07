@@ -13,7 +13,7 @@ sort beat merge sort?
 
 int main(){
     int n = 2;
-    while(n <= 8*log(n)){
+    while(n <= 8*log2(n)){
         n += 1;
     }
     printf("Insertion sort beats merge sort while n is between(inclusive) 2 and %d\n",n-1);
